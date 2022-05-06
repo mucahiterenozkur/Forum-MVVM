@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A854967027FB2FC8005E91AC /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854966F27FB2FC8005E91AC /* UICollectionViewCell.swift */; };
+		A85B62D727FAFB6F00216985 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B62D627FAFB6F00216985 /* Post.swift */; };
+		A85B62D927FAFDE200216985 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B62D827FAFDE200216985 /* Comment.swift */; };
+		A87B82CC27FB68760071A9A5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82CB27FB68760071A9A5 /* UserViewModel.swift */; };
+		A87B82D127FB76C00071A9A5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82D027FB76C00071A9A5 /* PostViewController.swift */; };
+		A87B82D327FB775C0071A9A5 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82D227FB775C0071A9A5 /* PostViewModel.swift */; };
+		A87B82D627FB7AA00071A9A5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82D527FB7AA00071A9A5 /* PostDetailViewController.swift */; };
+		A87B82D827FB7AB00071A9A5 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82D727FB7AB00071A9A5 /* PostDetailViewModel.swift */; };
+		A87B82DB27FB7C480071A9A5 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82DA27FB7C480071A9A5 /* CommentViewController.swift */; };
+		A87B82DD27FB7C550071A9A5 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87B82DC27FB7C550071A9A5 /* CommentViewModel.swift */; };
+		A8A2248F27FF00AB00AD6DD8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2248D27FF00AB00AD6DD8 /* CommentTableViewCell.swift */; };
+		A8A2249027FF00AB00AD6DD8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A2248E27FF00AB00AD6DD8 /* CommentTableViewCell.xib */; };
+		A8C588E327FDBA7C00F56471 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C588E127FDBA7C00F56471 /* UserTableViewCell.swift */; };
+		A8C588E427FDBA7C00F56471 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C588E227FDBA7C00F56471 /* UserTableViewCell.xib */; };
+		A8C588E727FDD82500F56471 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C588E527FDD82500F56471 /* PostTableViewCell.swift */; };
+		A8C588E827FDD82500F56471 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C588E627FDD82500F56471 /* PostTableViewCell.xib */; };
+		A8E3F27327FA40050013E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F27227FA40050013E6E7 /* AppDelegate.swift */; };
+		A8E3F27527FA40050013E6E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F27427FA40050013E6E7 /* SceneDelegate.swift */; };
+		A8E3F27727FA40050013E6E7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F27627FA40050013E6E7 /* UserViewController.swift */; };
+		A8E3F27A27FA40050013E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E3F27827FA40050013E6E7 /* Main.storyboard */; };
+		A8E3F27D27FA40050013E6E7 /* ForumApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F27B27FA40050013E6E7 /* ForumApp.xcdatamodeld */; };
+		A8E3F27F27FA40060013E6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E3F27E27FA40060013E6E7 /* Assets.xcassets */; };
+		A8E3F28227FA40060013E6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E3F28027FA40060013E6E7 /* LaunchScreen.storyboard */; };
+		A8E3F28D27FA43040013E6E7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A8E3F28C27FA43040013E6E7 /* Alamofire */; };
+		A8E3F28F27FA43340013E6E7 /* ForumAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F28E27FA43340013E6E7 /* ForumAppService.swift */; };
+		A8E3F29227FA43EC0013E6E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F29127FA43EC0013E6E7 /* User.swift */; };
+		A8E3F29427FA445A0013E6E7 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3F29327FA445A0013E6E7 /* Decoders.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A854966F27FB2FC8005E91AC /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		A85B62D627FAFB6F00216985 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A85B62D827FAFDE200216985 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		A87B82CB27FB68760071A9A5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A87B82D027FB76C00071A9A5 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		A87B82D227FB775C0071A9A5 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		A87B82D527FB7AA00071A9A5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		A87B82D727FB7AB00071A9A5 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		A87B82DA27FB7C480071A9A5 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		A87B82DC27FB7C550071A9A5 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		A8A2248D27FF00AB00AD6DD8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		A8A2248E27FF00AB00AD6DD8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		A8C588E127FDBA7C00F56471 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		A8C588E227FDBA7C00F56471 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		A8C588E527FDD82500F56471 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		A8C588E627FDD82500F56471 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		A8E3F26F27FA40050013E6E7 /* ForumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E3F27227FA40050013E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E3F27427FA40050013E6E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8E3F27627FA40050013E6E7 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		A8E3F27927FA40050013E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8E3F27C27FA40050013E6E7 /* ForumApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForumApp.xcdatamodel; sourceTree = "<group>"; };
+		A8E3F27E27FA40060013E6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E3F28127FA40060013E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E3F28327FA40060013E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E3F28E27FA43340013E6E7 /* ForumAppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumAppService.swift; sourceTree = "<group>"; };
+		A8E3F29127FA43EC0013E6E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A8E3F29327FA445A0013E6E7 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8E3F26C27FA40050013E6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E3F28D27FA43040013E6E7 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A854966827FB299C005E91AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8C588E127FDBA7C00F56471 /* UserTableViewCell.swift */,
+				A8C588E227FDBA7C00F56471 /* UserTableViewCell.xib */,
+				A8C588E527FDD82500F56471 /* PostTableViewCell.swift */,
+				A8C588E627FDD82500F56471 /* PostTableViewCell.xib */,
+				A8A2248D27FF00AB00AD6DD8 /* CommentTableViewCell.swift */,
+				A8A2248E27FF00AB00AD6DD8 /* CommentTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A854966E27FB2FA9005E91AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A854966F27FB2FC8005E91AC /* UICollectionViewCell.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A87B82CD27FB756C0071A9A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A87B82CE27FB75740071A9A5 /* UserView */,
+				A87B82CF27FB76AB0071A9A5 /* PostView */,
+				A87B82D427FB7A700071A9A5 /* PostDetailView */,
+				A87B82D927FB7C260071A9A5 /* CommentView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A87B82CE27FB75740071A9A5 /* UserView */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3F27627FA40050013E6E7 /* UserViewController.swift */,
+				A87B82CB27FB68760071A9A5 /* UserViewModel.swift */,
+			);
+			path = UserView;
+			sourceTree = "<group>";
+		};
+		A87B82CF27FB76AB0071A9A5 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				A87B82D027FB76C00071A9A5 /* PostViewController.swift */,
+				A87B82D227FB775C0071A9A5 /* PostViewModel.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
+		A87B82D427FB7A700071A9A5 /* PostDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A87B82D527FB7AA00071A9A5 /* PostDetailViewController.swift */,
+				A87B82D727FB7AB00071A9A5 /* PostDetailViewModel.swift */,
+			);
+			path = PostDetailView;
+			sourceTree = "<group>";
+		};
+		A87B82D927FB7C260071A9A5 /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				A87B82DA27FB7C480071A9A5 /* CommentViewController.swift */,
+				A87B82DC27FB7C550071A9A5 /* CommentViewModel.swift */,
+			);
+			path = CommentView;
+			sourceTree = "<group>";
+		};
+		A8E3F26627FA40050013E6E7 = {
+			isa = PBXGroup;
+			children = (
+				A8E3F27127FA40050013E6E7 /* ForumApp */,
+				A8E3F27027FA40050013E6E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E3F27027FA40050013E6E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3F26F27FA40050013E6E7 /* ForumApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E3F27127FA40050013E6E7 /* ForumApp */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3F27227FA40050013E6E7 /* AppDelegate.swift */,
+				A8E3F27427FA40050013E6E7 /* SceneDelegate.swift */,
+				A854966E27FB2FA9005E91AC /* Extension */,
+				A854966827FB299C005E91AC /* Cell */,
+				A8E3F29027FA43D10013E6E7 /* Model */,
+				A8E3F28927FA40920013E6E7 /* Service */,
+				A87B82CD27FB756C0071A9A5 /* View */,
+				A8E3F27827FA40050013E6E7 /* Main.storyboard */,
+				A8E3F28027FA40060013E6E7 /* LaunchScreen.storyboard */,
+				A8E3F27E27FA40060013E6E7 /* Assets.xcassets */,
+				A8E3F28327FA40060013E6E7 /* Info.plist */,
+				A8E3F27B27FA40050013E6E7 /* ForumApp.xcdatamodeld */,
+			);
+			path = ForumApp;
+			sourceTree = "<group>";
+		};
+		A8E3F28927FA40920013E6E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3F28E27FA43340013E6E7 /* ForumAppService.swift */,
+				A8E3F29327FA445A0013E6E7 /* Decoders.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A8E3F29027FA43D10013E6E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3F29127FA43EC0013E6E7 /* User.swift */,
+				A85B62D627FAFB6F00216985 /* Post.swift */,
+				A85B62D827FAFDE200216985 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8E3F26E27FA40050013E6E7 /* ForumApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E3F28627FA40060013E6E7 /* Build configuration list for PBXNativeTarget "ForumApp" */;
+			buildPhases = (
+				A8E3F26B27FA40050013E6E7 /* Sources */,
+				A8E3F26C27FA40050013E6E7 /* Frameworks */,
+				A8E3F26D27FA40050013E6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForumApp;
+			packageProductDependencies = (
+				A8E3F28C27FA43040013E6E7 /* Alamofire */,
+			);
+			productName = ForumApp;
+			productReference = A8E3F26F27FA40050013E6E7 /* ForumApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E3F26727FA40050013E6E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A8E3F26E27FA40050013E6E7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = A8E3F26A27FA40050013E6E7 /* Build configuration list for PBXProject "ForumApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E3F26627FA40050013E6E7;
+			packageReferences = (
+				A8E3F28B27FA43040013E6E7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = A8E3F27027FA40050013E6E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E3F26E27FA40050013E6E7 /* ForumApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8E3F26D27FA40050013E6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E3F28227FA40060013E6E7 /* LaunchScreen.storyboard in Resources */,
+				A8C588E427FDBA7C00F56471 /* UserTableViewCell.xib in Resources */,
+				A8E3F27F27FA40060013E6E7 /* Assets.xcassets in Resources */,
+				A8A2249027FF00AB00AD6DD8 /* CommentTableViewCell.xib in Resources */,
+				A8C588E827FDD82500F56471 /* PostTableViewCell.xib in Resources */,
+				A8E3F27A27FA40050013E6E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8E3F26B27FA40050013E6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87B82DD27FB7C550071A9A5 /* CommentViewModel.swift in Sources */,
+				A8E3F27727FA40050013E6E7 /* UserViewController.swift in Sources */,
+				A87B82CC27FB68760071A9A5 /* UserViewModel.swift in Sources */,
+				A8E3F28F27FA43340013E6E7 /* ForumAppService.swift in Sources */,
+				A8A2248F27FF00AB00AD6DD8 /* CommentTableViewCell.swift in Sources */,
+				A87B82D127FB76C00071A9A5 /* PostViewController.swift in Sources */,
+				A8E3F29227FA43EC0013E6E7 /* User.swift in Sources */,
+				A87B82DB27FB7C480071A9A5 /* CommentViewController.swift in Sources */,
+				A85B62D727FAFB6F00216985 /* Post.swift in Sources */,
+				A8E3F29427FA445A0013E6E7 /* Decoders.swift in Sources */,
+				A87B82D627FB7AA00071A9A5 /* PostDetailViewController.swift in Sources */,
+				A8E3F27327FA40050013E6E7 /* AppDelegate.swift in Sources */,
+				A87B82D827FB7AB00071A9A5 /* PostDetailViewModel.swift in Sources */,
+				A87B82D327FB775C0071A9A5 /* PostViewModel.swift in Sources */,
+				A8C588E727FDD82500F56471 /* PostTableViewCell.swift in Sources */,
+				A854967027FB2FC8005E91AC /* UICollectionViewCell.swift in Sources */,
+				A8C588E327FDBA7C00F56471 /* UserTableViewCell.swift in Sources */,
+				A8E3F27527FA40050013E6E7 /* SceneDelegate.swift in Sources */,
+				A85B62D927FAFDE200216985 /* Comment.swift in Sources */,
+				A8E3F27D27FA40050013E6E7 /* ForumApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8E3F27827FA40050013E6E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E3F27927FA40050013E6E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E3F28027FA40060013E6E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E3F28127FA40060013E6E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8E3F28427FA40060013E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E3F28527FA40060013E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E3F28727FA40060013E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGS6TYDXG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForumApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mucahiterenozkur.ForumApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E3F28827FA40060013E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGS6TYDXG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForumApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mucahiterenozkur.ForumApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8E3F26A27FA40050013E6E7 /* Build configuration list for PBXProject "ForumApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E3F28427FA40060013E6E7 /* Debug */,
+				A8E3F28527FA40060013E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E3F28627FA40060013E6E7 /* Build configuration list for PBXNativeTarget "ForumApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E3F28727FA40060013E6E7 /* Debug */,
+				A8E3F28827FA40060013E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8E3F28B27FA43040013E6E7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8E3F28C27FA43040013E6E7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8E3F28B27FA43040013E6E7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A8E3F27B27FA40050013E6E7 /* ForumApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8E3F27C27FA40050013E6E7 /* ForumApp.xcdatamodel */,
+			);
+			currentVersion = A8E3F27C27FA40050013E6E7 /* ForumApp.xcdatamodel */;
+			path = ForumApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A8E3F26727FA40050013E6E7 /* Project object */;
+}

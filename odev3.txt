@@ -1,0 +1,9 @@
+Project Description:
+Create an iOS project, which has 5 screens each with UI of your choice. Apps will consume mock service from this url: https://jsonplaceholder.typicode.com/
+The screens are:
+- SplashScreen: It will be the starting point of the app. Show a logo for 1 seconds and then open the next screen.
+- UserScreen: It will list users from this link: https://jsonplaceholder.typicode.com/users
+- UserPostsScreen: When clicking on user from list, another screen will list posts (only title) from this link: https://jsonplaceholder.typicode.com/posts
+- PostDetailsScreen: On the post item, there will be “Show More” button, which will take us post details screen. It will the clicked post title and body.
+- PostCommentsScreen: in PostDetailsScreen there will be “Read Comments” button, that will take us to screen that will list comments from this link: https://jsonplaceholder.typicode.com/comments
+Projeyi MVVM ile yapmanız beklenmekte. Kütüphane kullanımı serbest
