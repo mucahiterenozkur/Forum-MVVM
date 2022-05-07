@@ -15,7 +15,7 @@ Forum app is fundamentally listing users, their posts, their detailed view of po
 ✔️ Table view, <br>
 ✔️ https://jsonplaceholder.typicode.com is used, <br>
 
-👉 This is a project that I made at Turkcell Geleceği Yazanlar iOS Bootcamp.<br> 
+👉 This is a project that I made at Turkcell Geleceği Yazanlar iOS Bootcamp. <br> 
 👉 So, my commits are in a different private repository <br>
 
 PS. Also, there is a full simulation video below the gif. <br><br>
